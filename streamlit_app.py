@@ -7,9 +7,7 @@ st.set_page_config(page_title="Cuentas Corrientes", page_icon="💪")
 st.title("💪 Cuentas Corrientes")
 st.write(
     """
-    This app visualizes data from [The Movie Database (TMDB)](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).
-    It shows which movie genre performed best at the box office over the years. Just 
-    click on the widgets below to explore!
+Seleccione el grupo que quiere Analizar
     """
 )
 
@@ -28,7 +26,7 @@ df = load_data()
 genres = st.multiselect(
     "Genres",
     df.genre.unique(),
-    ["Action", "Adventure", "Biography", "Comedy", "Drama", "Horror"],
+    ["Aeropuerto", "Distribuidora", "Eventual", "Juan Torres", "NG", "NG-POLO","PRIVADO"],
 )
 
 # Show a slider widget with the years using `st.slider`.
